@@ -1,5 +1,10 @@
-#include <stdio.h>
-
+#include <iostream>
+#include <vector>
 int main(int, char**){
-    printf("Hello, from demo!\n");
+    std::vector<std::string> strItem{"one", "two", "three", "four"};
+    for(std::string str : strItem)
+    {
+        std::cout << str << std::endl;
+    }
+    return 0;
 }
